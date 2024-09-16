@@ -1,0 +1,381 @@
+
+<!DOCTYPE html> 
+<html lang="en">
+
+<!-- Mirrored from www.captalopharma.co.in/utils/sms_now.html?id=ID__42035510__18090472__CATALOG__478__Catalogs by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 16 Sep 2024 05:30:31 GMT -->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+<!-- Le HTML5 shim, for IE6-8 support of HTML5 elements --> 
+<!--[if lt IE 9]> 
+ <script type="text/javascript"  src="https://st.tistatic.com/ver9413/js/tradeindia/design_ver3/html5.js"> </script>
+<![endif]-->  
+<title></title>
+<meta name="description" content=""/>
+<meta name="keywords" content=""/>
+<meta content="origin" name="referrer"/>
+<meta name="msvalidate.01" content="57688BD1BCF17372DF1A872D59D4C044" />
+<LINK REL="SHORTCUT ICON" HREF="https://tiimg.tistatic.com/tradeindia.com/2008/images/favicon/favicon.ico" type="image/x-icon" media="all">
+<link href="../../st.tistatic.com/ver9413/combine_css_js74fa.css?type=css&amp;files=tradeindia/design_ver3/inner_media.css,design_ver3/tradeindia.css,tradeindia/design_ver3/tradeindia_new_raw.css,design_ver3/inquiry_form/form-popup.css,design_ver3/inquiry_form/form.css,tradeindia/design_ver4/tradeindia_top_header.css,tradeindia/design_ver4/tradeindia_footer.css,tradeindia/design_ver4/media.css" rel="stylesheet" type="text/css" media="all">
+<script type="text/javascript" src="../../st.tistatic.com/ver9413/js/c2c/CallmePopup.js"></script>
+<script type="text/javascript">
+var invit_win=0;
+</script>
+<!--Start Global site tag -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-KXVFMN679N"></script>
+<script> window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'G-KXVFMN679N'); </script>
+<script> window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'G-VTLSYCYF27'); </script>
+<!-- End Global site tag -->
+<LINK REL="SHORTCUT icon" href="https://img.tradeindia.com/tradeindia.com/2008/images/favicon/favicon.ico" type="image/x-icon" media="all">
+<link  href="../../st.tistatic.com/ver9413/combine_css_jsc64b.css?type=css&amp;files=search.css" rel="stylesheet" type="text/css" media="all">
+<script type="text/javascript" src="../../st.tistatic.com/ver9413/combine_css_js6da1.php?type=javascript&amp;files=design_ver3/search.js" ></script>
+<script type="text/javascript" src="../../st.tistatic.com/ver9413/js/utils/jquery.js"></script>
+</head>
+<body>
+<div class="ti-homepage-ver4">
+<title>Free SMS on tradeindia.com</title>
+<!--
+The effect that is being used to disable submit and reset buttons 
+when submit is clicked is being adopted from Dynamicdrive.com
+Submit Once form validation- 
+? Dynamic Drive (www.dynamicdrive.com)
+For full source code, usage terms, and 100's more DHTML scripts, 
+visit http://dynamicdrive.com
+-->
+ <script async src="https://www.googletagmanager.com/gtag/js?id=G-DD7STKSFBV"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'G-DD7STKSFBV');
+;
+</script>
+<!-- Google tag (gtag.js) --> <script async src="https://www.googletagmanager.com/gtag/js?id=G-VTLSYCYF27"></script> <script> window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'G-VTLSYCYF27'); </script>
+<script>
+function check_submission(frm)
+{
+	show_error[0]='Please make note of following things :\n';
+	form_name=frm.name;
+	//End of initial lines
+	var mob =  document.getElementById('phone').value ;
+       	mob = mob.replace(/\s*/g, '');
+	var email = document.getElementById('email_id').value;
+	
+	if(!email || !mob )
+	{
+		alert("Mobile and Email both are mandatory.");
+		return false ;
+	}
+	
+	if(email){
+		validate_text('email','Email','email',3);
+         }
+	if(mob.length < 10){
+		alert('Mobile number should be 10 digits.');
+                return false ;
+         }
+/*	
+	if (document.getElementsByName('captcha_in')[0])
+	{	
+		validate_text('captcha_in','Security Code','string');
+	}
+*/
+	validate_text('message','Message','string',10);
+	check_max_char(frm);
+	//Initial lines
+	error_counter('1');
+	if(back_m==1){disable();back_m=0;return true;}
+	else{error_counter('2');error_counter('0');return false;}
+	//End of initial lines
+}
+function check_max_char()
+{
+	var frm=document.first_form;
+	var maxlen = 235;
+	var obj=frm.message;
+	var pec_length=0;
+	pec_length= frm.email.value.length;
+	var char_length=frm.sms_message.value.length + pec_length;
+	if (char_length > maxlen)
+	{
+		obj.value = obj.value.substring(0, maxlen - pec_length);
+		alert('Only 235 characters are allowed in SMS Message.');
+		return false;
+	}
+	else
+	{
+	  document.getElementById('char_left').innerHTML = maxlen - char_length;
+	  return true;	
+	}
+}
+</script>
+<style type="text/css">
+.send_sms_heading {
+	font-weight: bold;
+	font-size: 14px;
+	color: black;
+	font-family: verdana;
+}
+.field_title {
+	font-weight: bold;
+	font-size: 11px;
+	color: black;
+	font-family: verdana;
+}
+.mobile-field {
+        padding:3px 3px 3px 3px;
+        margin:0px 0;
+        width: 82%;
+}
+.mobile-field input[type="number"], .mobile-field input[type="tel"] {
+        -moz-border-top-colors: none;
+        background: #fff none repeat scroll 0 0;
+        border-color: #c0c0c0 #d9d9d9 #d9d9d9;
+        border-image: none;
+        border-radius: 1px;
+        border-style: solid;
+        border-width: 1px;
+        box-sizing: border-box;
+        -ms-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        color: #404040;
+        display: inline-block;
+        font-size: 14px;
+        height:50px;
+        padding:0 0 0 40px;
+        margin:0 5px 0 0;
+ *line-height:50px;
+ *width:97% !important;
+}
+.mobile-field .mobile-app {
+        width:225px;
+}
+</style>
+<link href="../../st.tistatic.com/ver9413/combine_css_jscc4f.css?type=css&amp;files=tradeindia/design_ver4/intlTelInput.css" rel="stylesheet" type="text/css" media="all">
+<script type="text/javascript" src="../../st.tistatic.com/ver9413/combine_css_js56b2.php?type=javascript&amp;files=utils/common.js,utils/validation_lib.js" ></script>
+<!-- send email popup contact Begins-->
+<br/>
+<div id="inquiry_form_container" >
+	<form name="first_form" id="first_form_popup" action="https://www.captalopharma.co.in/utils/sms_now_action.html"  method="post" onSubmit="return check_submission(this)" >
+	<input value="ID__42035510__18090472__CATALOG__478__Catalogs" name="id" type="hidden">
+	  <table border="0" cellpadding="2" cellspacing="1">
+  <tr>
+    <td align="left" valign="top">
+		<input value="1" id="form_credentials_check" type="hidden" name="form_credentials_check" />
+    <table id="table_main_content" width="100%" border="0">
+  <tr>
+    <td align="left" valign="top"><table width="100%" border="0" cellpadding="2" cellspacing="1">
+      <tr>
+        <td align="left" valign="top"><table width="100%" border="0">
+          <tr></tr>
+        </table>
+          <table width="100%" border="0" cellspacing="0" cellpadding="0">
+<tr>
+              <td colspan="3" align="left" valign="top" style=" border-bottom:1px solid #666666; padding-bottom:3px;"><h2>Send SMS to <span class="co_nam" id="contact_co_name">Paarajlifescience</span>
+				<span id="span_sending_progress" name="span_email_progress" style="z-index: 5; display: none; font-weight: bold; color: white; font-size: 14px; text-align: center; border: solid 2px; border-color:#BC6502; width: 200px; background: url(../../st.tistatic.com/ver9413/js/utils/jquery-ui/images/pbar-ani.gif);">
+                                        &nbsp;&nbsp;&nbsp;&nbsp;
+					Sending Inquiry
+                                        &nbsp;&nbsp;&nbsp;&nbsp;
+                                </span></h2>
+	      </td>
+           </tr>
+              <tr>
+              <td colspan="3" align="left" valign="middle" class="mandatory"><label for="Message">Type Message to send via SMS <span>*</span></label><br/>
+                <textarea rows="5" cols="25" id="message" name="sms_message" wrap="VIRTUAL" onkeyup="check_max_char(this.form)" onblur="check_max_char(this.form)"></textarea>
+		<br>
+              <span><font size="1" class="black">&nbsp;&nbsp;&nbsp;Characters Remaining : <b><font id="char_left">235</font></b></font></span>
+                </td>
+            </tr>
+	<tr>
+          <td width="20%" height="40" class="orange"><b class="black"> &nbsp;Your Mobile</b></td>
+	  <td><b>:</b></td>	
+          <td width="80%">
+      <font size="1" class="black"><i>Type your mobile number </i><br>
+            <div class="mobile-field">
+                &nbsp;&nbsp;<input id="phone" class="mobile-app" type="tel" name="mobile">
+            </div>
+          </font>
+         </td>
+        </tr>
+        <tr>
+          <td width="20%" height="40" class="orange"><b class="black"> &nbsp;Your Email </b></td>
+	  <td><b>:</b></td>	
+          <td width="80%"  class="orange"><font size="1" class="black"> &nbsp;&nbsp;<i>Please type only one email address</i><br>
+          &nbsp;&nbsp; <input onkeyup="check_max_char(this.form)" size="25" id="email_id" type="text" name="email">
+          </font> </td>
+        </tr>
+        <tr id="user_otp_tr" style="display:none;">
+          <td width="20%" height="40" class="orange"><b class="black"> &nbsp;Enter OTP </b></td>
+	  <td><b>:</b></td>	
+          <td width="80%"  class="orange"><font size="1" class="black"> &nbsp;&nbsp;<i>Please enter OTP</i><br>
+          &nbsp;&nbsp; <input id="user_otp" size="25" name="user_otp" type="text">
+          </font> </td>
+        </tr>
+	 <tr style="display:none;">
+          <td class="orange"><b class="black">&nbsp;Security Code </b></td>
+	  <td><b>:</b></td>	
+          <td class="orange">&nbsp;&nbsp;
+ <script type="text/javascript" language="javascript">
+$(document).ready(function(){
+        var str = "b39RZjniMLUBe3haMai0DqrMv8OaFkbp2ZVQrycTG1QctjqOrlfgKMUh0QRhQY3v";
+        var img_id = "captcha_img";
+        var a_id = "captcha_audio";
+        var hidden_id = "challenge";
+        $('#'+img_id).attr('src', 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGQAAAAeCAMAAADthUvBAAAAM1BMVEX%2F9s19IlKSx8fu272%2BjI%2Bt%0AcYDOpp6NPGGPsrjewa5%2FNmCKiZuMnamdV3CEX32CS2%2BHdIysyg8oAAAACXBIWXMAAA7EAAAOxAGV%0AKw4bAAACnklEQVRIib2W0WLkIAhFvRpjnW7a%2Ff%2BvXUFAMOn0bZl2JipyAFGT8n%2BQNP5I9CcF2Zpv%0A5HGiGY3G84PqL%2FbezswOYn1vIE9p%2BBniKVm%2B37ozAdEHafue57lZIL8o5rhsm7PG%2BdFB%2Bfihsukt%0AI%2FtaaAeeisYaSFxdIQcHqtdbozdGoMykl7PWo9gYzIccAjmBdoh8qJleG%2FCq553SWzVvUz7AUs1F%0ApYQgc2pYUudYaQT%2BGh2tpE1eQJmUlHGtiZovaMaCZ46BPofqeDxTPvknCvV1sYO%2FrHBC%2BnIyyhbJ%0AUJlPI%2FKXjJCDlRO5QwpWH6jRMH26ViS4Q5IknmZ8ZuMB352StgVyOUji4IdNToaLBLhB0jL8of7a%0AOvV7shaEWhdmRKSplTcoP0AaZ0ikC%2BWerOZ6OYKOhAjRWBZDnymQPzdIi5GMZFWPZp0ya6w4Y9ir%0AS2qO868D7OILMtclq5UQ3%2BEK02flvk%2BYQuk9bICIBcfaZpqsM4VIuDXFqktj2dcEbHY4LfH2uU1A%0AZFdeFxEjZGzHhnqP5Km62Fy1pM79kTnlC3Ly8wbJwzgXA58AbyHJyiNrJE0Og8slq13X1SyHmPrg%0AlenbWj9FIi7rRUOW5tm1NoodU7b0mOpMJQYiJG%2BQi5ddKHTBqMUG1QtH3FyBzL7Txr2YkRAh%2Fj6R%0AYwGK5NGTjvrvz2QTiz%2BsR%2BmxFvl%2B8dQZCZbV%2FWactZpWfYSb0blHHXJAZz3RE63QpOQVS77f8ait%0AdU8JdzySkUaTIJ%2FaTcteusBcxjSO8LaC6VWowuGsvK0ohcFfVsKwnSyUrBR9W9neu54o8yIngfyT%0AnOu2hLsJqYA1lvXetU6tpbqfa5Zi7Gvjh2E6LmNcXTAXnbfjy%2FV4BUTlOAwzBvkM%2BQdVKgvpCJ6v%0A1QAAAABJRU5ErkJggg%3D%3D%0A'   );
+        $('#'+a_id).attr('href', 'https://www.tradeindia.com/utils/captcha_audio.html?c=' + str   );
+        $('#'+hidden_id).val( str  );
+});
+</script>
+<input id="challenge" type="hidden" name="challenge" />
+			<span  class="f4">
+			Please enter the letters displayed in the picture below into the box for "Security Code"<br>
+			<img id="captcha_img" />
+			<a target="_blank" id="captcha_audio">Listen to the Code</a>(Audio Link)
+			<input name="new_captcha" type="hidden" value="1">
+			<br>
+                        <input type="text" name="captcha_in" style="border: 1px solid #000000;" size="15" />
+			</span>
+          </td>
+        </tr>
+          </table>
+          <table width="100%" border="0">
+          </table></td>
+      </tr>
+    </table></td>
+  </tr>
+  <tr id="gen_otp_tr">
+    <td align="center" valign="top">
+        <button type="button" name="gen_otp" id="gen_otp"  value="1" style="background: none; border: 1px solid #000000; width:149px; height:35px;color: #090909; cursor: pointer; margin-top:10px;">Generate OTP</button>
+    </td>
+  </tr>
+   <tr >
+     <td align="center" valign="top"></td>
+   </tr>
+  <tr id="send_sms_tr" style="display:none;">
+    <td align="center" valign="top">
+        <button type="submit" name="Submit" value="Submit" id="submit_button" style="background:url(../../tiimg.tistatic.com/new_website1/common/send-sms.jpg) no-repeat scroll 0 0 transparent;border: medium none;width:149px; height:35px;color: #FFFFFF; cursor: pointer; margin-top:10px;"></button>
+    </td>
+  </tr>
+</table>
+    </td>
+  </tr>
+</table>
+       </form>
+</div>
+<script type="text/javascript" src="../../st.tistatic.com/ver9413/combine_css_js3fe6.php?type=javascript&amp;files=tradeindia/design_ver4/carouFredSelpacked.js,tradeindia/design_ver4/tradeindia.js,tradeindia/design_ver4/intlTelInput.js" ></script>
+       <!-- send email popup contact end-->
+<script type="text/javascript" langauge="javascript">
+jQuery(document).ready(function(){
+  jQuery('#email_id, #phone').blur(function(){
+        check_email_mobile_exist(jQuery(this));
+  });
+  
+  jQuery('#gen_otp').click(function(){
+		submit_otp();
+  });
+	jQuery('#submit_button').click(function(e){
+			
+					e.preventDefault();
+	var user_otp = jQuery.trim(jQuery('#user_otp').val());			
+	if(!user_otp){
+	alert("Please Fill Otp !!!");
+	return false;
+	}
+	jQuery.ajax({
+    url: '/Exporters_Suppliers/Exporters/hp/scripts/generate_otp.html',
+    type: 'POST',
+    data: { 'get_otp' : 1 , 'user_otp' : user_otp},
+    success: function(data){
+			if(data.SUCCESS && (data.SUCCESS.VERIFIED_MOBILE_OTP || data.SUCCESS.VERIFIED_EMAIL_OTP )){
+				jQuery('#first_form_popup').submit();
+			}else if(data.ERROR && data.ERROR.NOT_VERIFIED ){
+				alert("Enter valid OTP !!!");
+			
+			}else if(data.FAIL && data.FAIL.MSG){
+			
+				alert(data.FAIL.MSG);
+			}else{
+				alert("ERROR OCCURRED !!!");
+			
+			}
+    }
+    });
+	});
+	
+});
+function check_email_mobile_exist(Obj) {
+  var mob_val_trim = jQuery.trim(jQuery('#phone').val());
+  var email_val_trim = jQuery.trim(jQuery('#email_id').val());
+  var thislength = jQuery.trim(jQuery(Obj).val());
+  if(thislength.length>0)
+  {
+      jQuery('#check_exist').val('0');
+      var data_obj = {};
+      var field = '';
+      if(jQuery(Obj).attr('id') =='email_id' && email_val_trim.length>0) {
+        data_obj = {'email' : email_val_trim};
+        field = Obj.attr('id');
+      } else if(jQuery(Obj).attr('id') =='phone' && mob_val_trim.length>0){
+        data_obj = {'mobile' : mob_val_trim};
+        field = Obj.attr('id');
+      }
+      jQuery.ajax({
+        url: '/utils/check_email_mobile_exist.html',
+        type: 'POST',
+        data: data_obj,
+        success: function(data){
+          if(/FAILED/.test(data)) {
+        }
+      }
+    });
+  }
+}
+function submit_otp(){
+//var mob =  encodeURIComponent(jQuery.trim(jQuery('#phone').val())) ;
+//var email = jQuery.trim(jQuery('#email_id').val()) ;
+		var mob =  document.getElementById('phone').value ;
+		mob = mob.replace(/\s*/g, '');
+		var email = document.getElementById('email_id').value;
+jQuery.ajax({
+	url: '/Exporters_Suppliers/Exporters/hp/scripts/generate_otp.html',
+	type: 'POST',
+	data: { client_email : email , client_mobile : mob },
+	success: function(data){
+	if(data.SUCCESS){
+	alert(data.SUCCESS.msg);
+	jQuery("#user_otp_tr").show();
+	jQuery("#send_sms_tr").show();
+	jQuery("#gen_otp_tr").show();
+	jQuery("#gen_otp").text("Resend OTP");
+	}else{
+	alert(data.ERROR.msg);
+	jQuery("#gen_otp_tr").show();
+	jQuery("#gen_otp").text("Resend OTP");
+	}
+	}
+	});
+}
+</script>
+</div>
+<!-- Google Code for RMC List -->
+<script type="text/javascript">
+/* <![CDATA[ */
+var google_conversion_id = 954954047;
+var google_conversion_language = "en";
+var google_conversion_format = "3";
+var google_conversion_color = "ffffff";
+var google_conversion_label = "LQwxCIGnzAMQv-KtxwM";
+var google_conversion_value = 0;
+/* ]]> */
+<script type="text/javascript" src="../../www.googleadservices.com/pagead/f.txt">
+</script>
+<noscript>
+<div style="display:inline;">
+<img height="1" width="1" style="border-style:none;" alt="" src="http://www.googleadservices.com/pagead/conversion/954954047/?label=LQwxCIGnzAMQv-KtxwM&amp;guid=ON&amp;script=0"/>
+</div>
+</noscript>
+</body>
+
+<!-- Mirrored from www.captalopharma.co.in/utils/sms_now.html?id=ID__42035510__18090472__CATALOG__478__Catalogs by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 16 Sep 2024 05:30:36 GMT -->
+</html>
